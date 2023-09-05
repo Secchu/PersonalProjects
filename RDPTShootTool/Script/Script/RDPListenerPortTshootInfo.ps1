@@ -113,7 +113,7 @@ function Get-RDPListenerTshootInfo {
 
         if($IncludeHelpTips)
         {
-            if($ProcessName -ne "svchost")
+            if($ProcessName -eq "svchost")
             { Write-Host `n"The RDP Listener is listening on the configured port`n" }
             else
             {
