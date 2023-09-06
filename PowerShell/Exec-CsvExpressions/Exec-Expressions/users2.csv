@@ -1,0 +1,3 @@
+Path,Department,SamAccountName,Name,GivenName,Surname,UserPrincipalName,City,ChangePasswordAtLogon,WhatIf
+"OU=Test,DC=globaltronics,DC=pri",Operations,Gemma,Gemma,Gemma,Melendez,Gemma@globaltronics.pri,Madison,$True,""
+"OU=Test,DC=globaltronics,DC=pri",Operations,Mark,Mark,Mark,Davis,Mark@globaltronics.pri,Madison,$True,""

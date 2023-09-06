@@ -1,0 +1,9 @@
+Path,Department,SamAccountName,Name,GivenName,Surname,UserPrincipalName,City,ChangePasswordAtLogon
+"OU=Test,DC=globaltronics,DC=pri",Operations,JohnM,JohnM,John,Mendez,JohnM@globaltronics.pri,Madison,$True
+"OU=Test,DC=globaltronics,DC=pri",IT,LynneB,LynneB,Lynne,Baxter,LynneB@globaltronics.pri,Madison,$True
+"OU=Test,DC=globaltronics,DC=pri",Development,ClaudiaL,ClaudiaL,Claudia,Loiselle,ClaudiaL@globaltronics.pri,Madison,$True
+"OU=Test,DC=globaltronics,DC=pri",Operations,JackT,JackT,Jack,Davis,JackT@globaltronics.pri,Madison,$True
+"OU=Test,DC=globaltronics,DC=pri",Operations,billj,billj,bill,Jones,billj@globaltronics.pri,Madison,$True
+"OU=Test,DC=globaltronics,DC=pri",IT,todds,todds,Todd,Smith,todds@globaltronics.pri,Madison,$True
+"OU=Test,DC=globaltronics,DC=pri",IT,mbtest,mbtest,Mike,Bender-Test,mbtest@globaltronics.pri,Madison,$False
+"OU=Test,DC=globaltronics,DC=pri",IT,mbadmin,mbadmin,Mike,Bender-Admin,mbadmin@globaltronics.pri,Chicago,$False

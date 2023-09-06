@@ -1,0 +1,4 @@
+Name,SamAccountName,Path
+Server1,Server1,"OU=Test,DC=globaltronics,DC=pri"
+Server2,Server2,"OU=Test,DC=globaltronics,DC=pri"
+DC1,DC1,"OU=Test,DC=globaltronics,DC=pri"
