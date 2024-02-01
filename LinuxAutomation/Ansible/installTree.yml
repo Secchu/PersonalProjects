@@ -1,0 +1,9 @@
+---
+- name: install tree
+  hosts: all
+  become: true
+  tasks:
+    - name: install package tree
+      package:
+        name: tree
+        state: present
