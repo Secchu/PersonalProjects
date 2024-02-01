@@ -46,4 +46,4 @@ aws cloudformation delete-stack --stack-name auto-scaling-production
 
 Note
 ====
-You can substitue the template-url parameter with the template-body parameter if the cloudformation file is local 
+You can substitute the template-url parameter with the template-body parameter if the cloudformation file is local 
