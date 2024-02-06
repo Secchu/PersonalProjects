@@ -1,0 +1,29 @@
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    margin: auto;
+}
+
+div.d1 {
+    width: 300px;
+    margin: auto;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
