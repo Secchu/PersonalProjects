@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="DatabindingSample.ColorList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DatabindingSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    NavigationCacheMode="Enabled">
+
+    <Page.Resources>
+        <DataTemplate x:Key="ColorTemplate" x:DataType="local:ColorDescriptor">
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Width="200" 
+                           Height="20">
+                    <Rectangle.Fill>
+                        <SolidColorBrush Color="{x:Bind Color}"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <TextBlock Text="{x:Bind Name}" 
+                           Margin="20, 10, 0, 10"/>
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid>
+        <StackPanel>
+            <ComboBox ItemsSource="{x:Bind Logic.LotsOfColors}" 
+              Margin="20, 20, 20, 0" 
+              Width="200"
+              HorizontalAlignment="Left" 
+              VerticalAlignment="Top"
+              ItemTemplate="{StaticResource ColorTemplate}"
+              SelectedItem="{x:Bind Logic.SelectedColor, Mode=TwoWay}" 
+              />
+
+            <Button Margin="20" 
+            Click="{x:Bind Logic.AddSelectedColorToFavorites}">Add to Favorites</Button>
+            <TextBlock FontSize="25" 
+               Margin="20, 20, 20, 0">Favorite colors</TextBlock>
+
+            <ListBox SelectedItem="{x:Bind Logic.SelectedFavoriteColor, Mode=TwoWay}" 
+                     ItemsSource="{x:Bind Logic.FavoriteColors}"
+                     ItemTemplate="{StaticResource ColorTemplate}"
+                     Margin="20, 20, 20, 0"/>
+
+            <Button Margin="20" Visibility="{x:Bind Logic.IsRemoveFavoriteColorButtonVisible, Mode=OneWay}"
+            Click="{x:Bind Logic.RemoveFavoriteColor}">Remove from Favorites</Button>
+
+        </StackPanel>
+
+        <HyperlinkButton Content="Click to go to Basic Text Binding Demo" Click="HyperlinkButton_Click"
+             HorizontalAlignment="Center"/>
+    </Grid>
+</Page>
